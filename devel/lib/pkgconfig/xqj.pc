@@ -1,0 +1,8 @@
+prefix=/home/xqj/catkin_ws/devel
+
+Name: xqj
+Description: Description of xqj
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/xqj/catkin_ws/devel/lib 
+Requires: roscpp cv_bridge image_transport

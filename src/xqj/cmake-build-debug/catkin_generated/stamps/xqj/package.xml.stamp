@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>xqj</name>
+  <version>0.0.0</version>
+  <description>The my_cv package</description>
+
+  <maintainer email="657083620@qq.com">yxp</maintainer>
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+  <build_export_depend>image_transport</build_export_depend>
+
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+
+</package>
