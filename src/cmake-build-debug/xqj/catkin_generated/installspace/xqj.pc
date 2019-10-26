@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: xqj
-Description: Description of xqj
-Version: 0.0.0
-Cflags: 
-Libs: -L/usr/local/lib 
-Requires: roscpp cv_bridge image_transport
