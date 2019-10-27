@@ -22,7 +22,7 @@ include_directories(
 
 link_directories(${OpenCV_LIBRARY_DIRS})
 
-add_executable(vision_node src/main.cpp src/armor_find.cpp include/armor_find.h src/pic_porcess.cpp include/pic_porcess.h)
+add_executable(vision_node src/main.cpp src/find_light_blobs.cpp include/find_light_blobs.h src/pic_porcess.cpp include/pic_porcess.h include/light_blobs.h src/armor_finder.cpp include/armor_finder.h src/find_armor_box.cpp include/find_armor_box.h include/constants.h)
 
 add_definitions(-std=c++11 -g -O3)
 

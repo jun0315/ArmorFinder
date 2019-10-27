@@ -3,8 +3,8 @@
 #include <image_transport/image_transport.h>
 #include <opencv2/highgui/highgui.hpp>
 #include <cv_bridge/cv_bridge.h>
-#include "armor_find.h"
-
+#include "find_light_blobs.h"
+#include "light_blobs.h"
 using namespace std;
 using namespace cv;
 
@@ -14,10 +14,12 @@ int main() {
     videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, 480 );
     ArmorFinder armorFinder;
     Mat src;
+    LightBlobs lightBlobs;
     while (1) {
         videoCapture >> src;
         imshow("test", src);
-        armorFinder.findLightBlobs(src);
+        armorFinder.findLightBlobs(src,lightBlobs);
+        armorFinder.matchArmorBoxes(src,lightBlobs);
         waitKey(20);
     }
 }

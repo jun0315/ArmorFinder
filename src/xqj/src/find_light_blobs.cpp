@@ -2,12 +2,13 @@
 // Created by xqj on 2019/10/26.
 //
 
-#include "../include/armor_find.h"
+#include "find_light_blobs.h"
 
-bool ArmorFinder::findLightBlobs(Mat &src) {
+bool ArmorFinder::findLightBlobs(Mat &src ,LightBlobs &lightBlobs) {
     vector<Mat> channels;//通道拆分
     split(src, channels);
     Mat color_channel = channels[2];
+    Mat threshold_pic;
     imshow("split_red", color_channel);
     namedWindow("threshold", 1);
     char TrackbarName[50];
@@ -25,9 +26,8 @@ bool ArmorFinder::findLightBlobs(Mat &src) {
             RotatedRect rect = minAreaRect(light_contours[i]);
             if(isVaildLightBlob(light_contours[i],rect)){
                 rotatedRects.push_back(rect);
+                lightBlobs.emplace_back(rect,areaRatio(light_contours[i],rect),get_blob_color(src,rect));
             }
-//            printf("contour area:%lf rect area:%lf chufa%lf\n",contourArea(light_contours[i]),rect.size.area(),
-//            contourArea(light_contours[i])/rect.size.area() );
         }
     }
     if(rotatedRects.size()>0)
@@ -38,18 +38,42 @@ bool ArmorFinder::findLightBlobs(Mat &src) {
     return false;
 }
 
-bool ArmorFinder::isVaildLightBlob(const vector<Point> &contour, const RotatedRect &rect) {
+bool isVaildLightBlob(const vector<Point> &contour, const RotatedRect &rect) {
     return (1.2 < lw_rate(rect) && lw_rate(rect) < 10) &&
            ((rect.size.area() < 50 && areaRatio(contour, rect) > 0.4) ||
             rect.size.area() >= 50 && areaRatio(contour, rect) > 0.6);
 }
 
-double ArmorFinder::lw_rate(const RotatedRect &rect) {
+double lw_rate(const RotatedRect &rect) {
     return rect.size.height > rect.size.width ?
            rect.size.height / rect.size.width :
            rect.size.width / rect.size.height;
 }
 
-double ArmorFinder::areaRatio(const vector<Point> &contour,const RotatedRect & rect){
+double areaRatio(const vector<Point> &contour,const RotatedRect & rect){
     return contourArea(contour) / rect.size.area();
+}
+
+// 判断灯条颜色(此函数可以有性能优化).
+// TODO
+uint8_t get_blob_color(Mat &src, RotatedRect &blobPos) {
+    auto region = blobPos.boundingRect();
+    region.x -= fmax(3, region.width * 0.1);
+    region.y -= fmax(3, region.height * 0.05);
+    region.width += 2 * fmax(3, region.width * 0.1);
+    region.height += 2 * fmax(3, region.height * 0.05);
+    region &= cv::Rect(0, 0, src.cols, src.rows);
+    cv::Mat roi = src(region);
+    int red_cnt = 0, blue_cnt = 0;
+    for (int row = 0; row < roi.rows; row++) {
+        for (int col = 0; col < roi.cols; col++) {
+            red_cnt += roi.at<cv::Vec3b>(row, col)[2];
+            blue_cnt += roi.at<cv::Vec3b>(row, col)[0];
+        }
+    }
+    if (red_cnt > blue_cnt) {
+        return BLOB_RED;
+    } else {
+        return BLOB_BLUE;
+    }
 }
