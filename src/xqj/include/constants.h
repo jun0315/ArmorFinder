@@ -7,6 +7,7 @@
 
 #define ENEMY_BLUE 0
 #define ENEMY_RED 1
+#define WHITE_LIGHT -1
 
 #define SRC_HEIGHT 480
 #define SRC_WIDTH 640

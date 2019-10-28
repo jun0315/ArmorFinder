@@ -9,7 +9,7 @@
 
 class  ArmorFinder{
 public:
-    const uint8_t &enemy_color = 1;                                  //敌方颜色
+    const uint8_t enemy_color = 0;                                  //敌方颜色
     bool findLightBlobs(Mat &src, LightBlobs &lightBlobs);
     bool matchArmorBoxes(Mat &src,LightBlobs &lightBlobs);
 };

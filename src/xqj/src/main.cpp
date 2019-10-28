@@ -10,18 +10,29 @@ using namespace std;
 using namespace cv;
 
 int main() {
-    VideoCapture videoCapture(0);
-    videoCapture.set(CV_CAP_PROP_FRAME_WIDTH, SRC_WIDTH);
-    videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, SRC_HEIGHT);
-    ArmorFinder armorFinder;
-    Mat src;
+    //从摄像头获取图片
+//    VIDEOCAPTURE VIDEOCAPTURE(0);
+//    VIDEOCAPTURE.SET(CV_CAP_PROP_FRAME_WIDTH, SRC_WIDTH);
+//    VIDEOCAPTURE.SET(CV_CAP_PROP_FRAME_HEIGHT, SRC_HEIGHT);
+//    ARMORFINDER ARMORFINDER;
+//    MAT SRC;
+//
+//    WHILE (1) {
+//        LIGHTBLOBS LIGHTBLOBS;
+//        VIDEOCAPTURE >> SRC;
+//        IMSHOW("TEST", SRC);
+//        ARMORFINDER.FINDLIGHTBLOBS(SRC, LIGHTBLOBS);
+//        ARMORFINDER.MATCHARMORBOXES(SRC, LIGHTBLOBS);
+//        WAITKEY(100);
+//    }
 
-    while (1) {
-        LightBlobs lightBlobs;
-        videoCapture >> src;
-        imshow("test", src);
-        armorFinder.findLightBlobs(src, lightBlobs);
-        armorFinder.matchArmorBoxes(src, lightBlobs);
-        waitKey(100);
-    }
+//从相册拿图片
+    Mat src = imread("/home/xqj/catkin_ws/src/xqj/image/image1.jpeg", CV_LOAD_IMAGE_UNCHANGED);
+    resize(src,src,Size(600,480));
+    imshow("src",src);
+    LightBlobs lightBlobs;
+    ArmorFinder armorFinder;
+    armorFinder.findLightBlobs(src, lightBlobs);
+    armorFinder.matchArmorBoxes(src, lightBlobs);
+    waitKey(0);
 }

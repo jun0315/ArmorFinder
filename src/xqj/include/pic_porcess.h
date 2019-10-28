@@ -18,7 +18,7 @@ public:
 
     static void imshowLightBlosForRect(LightBlobs &lightBlobs, String fileName);
 
-    static void imshowRect(int srcWidth,int srcHeight,const vector<RotatedRect> &rotatedRects);
+//    static void imshowRect(int srcWidth,int srcHeight,const vector<RotatedRect> &rotatedRects);
 };
 
 #endif //CATKIN_WS_PIC_PORCESS_H
