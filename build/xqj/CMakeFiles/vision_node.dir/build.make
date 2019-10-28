@@ -81,28 +81,28 @@ xqj/CMakeFiles/vision_node.dir/src/main.cpp.o.provides: xqj/CMakeFiles/vision_no
 xqj/CMakeFiles/vision_node.dir/src/main.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/main.cpp.o
 
 
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o: xqj/CMakeFiles/vision_node.dir/flags.make
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o: /home/xqj/catkin_ws/src/xqj/src/armor_find.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o"
-	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_node.dir/src/armor_find.cpp.o -c /home/xqj/catkin_ws/src/xqj/src/armor_find.cpp
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o: xqj/CMakeFiles/vision_node.dir/flags.make
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o: /home/xqj/catkin_ws/src/xqj/src/find_light_blobs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o -c /home/xqj/catkin_ws/src/xqj/src/find_light_blobs.cpp
 
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_node.dir/src/armor_find.cpp.i"
-	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqj/catkin_ws/src/xqj/src/armor_find.cpp > CMakeFiles/vision_node.dir/src/armor_find.cpp.i
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.i"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqj/catkin_ws/src/xqj/src/find_light_blobs.cpp > CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.i
 
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_node.dir/src/armor_find.cpp.s"
-	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqj/catkin_ws/src/xqj/src/armor_find.cpp -o CMakeFiles/vision_node.dir/src/armor_find.cpp.s
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.s"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqj/catkin_ws/src/xqj/src/find_light_blobs.cpp -o CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.s
 
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.requires:
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.requires:
 
-.PHONY : xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.requires
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.requires
 
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.provides: xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.requires
-	$(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.provides.build
-.PHONY : xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.provides
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.provides: xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.requires
+	$(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.provides.build
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.provides
 
-xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o
+xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o
 
 
 xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o: xqj/CMakeFiles/vision_node.dir/flags.make
@@ -129,18 +129,96 @@ xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o.provides: xqj/CMakeFiles/vi
 xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o
 
 
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o: xqj/CMakeFiles/vision_node.dir/flags.make
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o: /home/xqj/catkin_ws/src/xqj/src/armor_finder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_node.dir/src/armor_finder.cpp.o -c /home/xqj/catkin_ws/src/xqj/src/armor_finder.cpp
+
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_node.dir/src/armor_finder.cpp.i"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqj/catkin_ws/src/xqj/src/armor_finder.cpp > CMakeFiles/vision_node.dir/src/armor_finder.cpp.i
+
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_node.dir/src/armor_finder.cpp.s"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqj/catkin_ws/src/xqj/src/armor_finder.cpp -o CMakeFiles/vision_node.dir/src/armor_finder.cpp.s
+
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.requires:
+
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.requires
+
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.provides: xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.requires
+	$(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.provides.build
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.provides
+
+xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o
+
+
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o: xqj/CMakeFiles/vision_node.dir/flags.make
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o: /home/xqj/catkin_ws/src/xqj/src/find_armor_box.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o -c /home/xqj/catkin_ws/src/xqj/src/find_armor_box.cpp
+
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_node.dir/src/find_armor_box.cpp.i"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqj/catkin_ws/src/xqj/src/find_armor_box.cpp > CMakeFiles/vision_node.dir/src/find_armor_box.cpp.i
+
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_node.dir/src/find_armor_box.cpp.s"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqj/catkin_ws/src/xqj/src/find_armor_box.cpp -o CMakeFiles/vision_node.dir/src/find_armor_box.cpp.s
+
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.requires:
+
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.requires
+
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.provides: xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.requires
+	$(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.provides.build
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.provides
+
+xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o
+
+
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o: xqj/CMakeFiles/vision_node.dir/flags.make
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o: /home/xqj/catkin_ws/src/xqj/src/show_pic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vision_node.dir/src/show_pic.cpp.o -c /home/xqj/catkin_ws/src/xqj/src/show_pic.cpp
+
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vision_node.dir/src/show_pic.cpp.i"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqj/catkin_ws/src/xqj/src/show_pic.cpp > CMakeFiles/vision_node.dir/src/show_pic.cpp.i
+
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vision_node.dir/src/show_pic.cpp.s"
+	cd /home/xqj/catkin_ws/build/xqj && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqj/catkin_ws/src/xqj/src/show_pic.cpp -o CMakeFiles/vision_node.dir/src/show_pic.cpp.s
+
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.requires:
+
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.requires
+
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.provides: xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.requires
+	$(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.provides.build
+.PHONY : xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.provides
+
+xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.provides.build: xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o
+
+
 # Object files for target vision_node
 vision_node_OBJECTS = \
 "CMakeFiles/vision_node.dir/src/main.cpp.o" \
-"CMakeFiles/vision_node.dir/src/armor_find.cpp.o" \
-"CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o"
+"CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o" \
+"CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o" \
+"CMakeFiles/vision_node.dir/src/armor_finder.cpp.o" \
+"CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o" \
+"CMakeFiles/vision_node.dir/src/show_pic.cpp.o"
 
 # External object files for target vision_node
 vision_node_EXTERNAL_OBJECTS =
 
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/main.cpp.o
-/home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o
+/home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o
+/home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o
+/home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o
+/home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/build.make
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: /opt/ros/kinetic/lib/libcv_bridge.so
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
@@ -222,7 +300,7 @@ vision_node_EXTERNAL_OBJECTS =
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_imgproc3.so.3.3.1
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: /opt/ros/kinetic/lib/x86_64-linux-gnu/libopencv_core3.so.3.3.1
 /home/xqj/catkin_ws/devel/lib/xqj/vision_node: xqj/CMakeFiles/vision_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/xqj/catkin_ws/devel/lib/xqj/vision_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xqj/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable /home/xqj/catkin_ws/devel/lib/xqj/vision_node"
 	cd /home/xqj/catkin_ws/build/xqj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vision_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -231,8 +309,11 @@ xqj/CMakeFiles/vision_node.dir/build: /home/xqj/catkin_ws/devel/lib/xqj/vision_n
 .PHONY : xqj/CMakeFiles/vision_node.dir/build
 
 xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/main.cpp.o.requires
-xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o.requires
+xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o.requires
 xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o.requires
+xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o.requires
+xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o.requires
+xqj/CMakeFiles/vision_node.dir/requires: xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o.requires
 
 .PHONY : xqj/CMakeFiles/vision_node.dir/requires
 

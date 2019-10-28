@@ -4,7 +4,7 @@
 
 #include "find_light_blobs.h"
 
-bool ArmorFinder::findLightBlobs(Mat &src ,LightBlobs &lightBlobs) {
+bool ArmorFinder::findLightBlobs(Mat &src, LightBlobs &lightBlobs) {
     vector<Mat> channels;//通道拆分
     split(src, channels);
     Mat color_channel = channels[2];
@@ -13,7 +13,7 @@ bool ArmorFinder::findLightBlobs(Mat &src ,LightBlobs &lightBlobs) {
     namedWindow("threshold", 1);
     char TrackbarName[50];
     sprintf(TrackbarName, "threshold %d", 255);
-    threshold(color_channel, threshold_pic, 245,255, CV_THRESH_BINARY);
+    threshold(color_channel, threshold_pic, 245, 255, CV_THRESH_BINARY);
     PictureProcess::erodeAndDilte(threshold_pic);
     imshow("process_pic", threshold_pic);
     vector<vector<Point>> light_contours;
@@ -24,15 +24,14 @@ bool ArmorFinder::findLightBlobs(Mat &src ,LightBlobs &lightBlobs) {
         //此时没有父轮廓，是最大的轮廓
         if (hierarchy[i][2] == -1) {
             RotatedRect rect = minAreaRect(light_contours[i]);
-            if(isVaildLightBlob(light_contours[i],rect)){
+            if (isVaildLightBlob(light_contours[i], rect)) {
                 rotatedRects.push_back(rect);
-                lightBlobs.emplace_back(rect,areaRatio(light_contours[i],rect),get_blob_color(src,rect));
+                lightBlobs.emplace_back(rect, areaRatio(light_contours[i], rect), get_blob_color(src, rect));
             }
         }
     }
-    if(rotatedRects.size()>0)
-    {
-        PictureProcess::imshowRect(src.size().width,src.size().height,rotatedRects);
+    if (rotatedRects.size() > 0) {
+        PictureProcess::imshowLightBlosForRect(lightBlobs, "find lightblobs");
         return true;
     }
     return false;
@@ -50,7 +49,7 @@ double lw_rate(const RotatedRect &rect) {
            rect.size.width / rect.size.height;
 }
 
-double areaRatio(const vector<Point> &contour,const RotatedRect & rect){
+double areaRatio(const vector<Point> &contour, const RotatedRect &rect) {
     return contourArea(contour) / rect.size.area();
 }
 

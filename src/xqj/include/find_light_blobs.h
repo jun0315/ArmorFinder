@@ -11,6 +11,7 @@
 #include "light_blobs.h"
 #include "armor_finder.h"
 #include "constants.h"
+#include "show_pic.h"
 using namespace std;
 using namespace cv;
 

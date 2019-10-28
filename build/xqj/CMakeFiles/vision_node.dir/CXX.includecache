@@ -6,23 +6,69 @@
 
 #IncludeRegexTransform: 
 
-/home/xqj/catkin_ws/src/xqj/include/armor_find.h
+/home/xqj/catkin_ws/src/xqj/include/armor_finder.h
+find_light_blobs.h
+/home/xqj/catkin_ws/src/xqj/include/find_light_blobs.h
+
+/home/xqj/catkin_ws/src/xqj/include/constants.h
+
+/home/xqj/catkin_ws/src/xqj/include/find_armor_box.h
+opencv2/highgui/highgui.hpp
+-
+cv_bridge/cv_bridge.h
+-
+armor_finder.h
+/home/xqj/catkin_ws/src/xqj/include/armor_finder.h
+
+/home/xqj/catkin_ws/src/xqj/include/find_light_blobs.h
 opencv2/highgui/highgui.hpp
 -
 cv_bridge/cv_bridge.h
 -
 pic_porcess.h
 /home/xqj/catkin_ws/src/xqj/include/pic_porcess.h
+light_blobs.h
+/home/xqj/catkin_ws/src/xqj/include/light_blobs.h
+armor_finder.h
+/home/xqj/catkin_ws/src/xqj/include/armor_finder.h
+constants.h
+/home/xqj/catkin_ws/src/xqj/include/constants.h
+show_pic.h
+/home/xqj/catkin_ws/src/xqj/include/show_pic.h
+
+/home/xqj/catkin_ws/src/xqj/include/light_blobs.h
+opencv2/highgui/highgui.hpp
+-
+cv_bridge/cv_bridge.h
+-
 
 /home/xqj/catkin_ws/src/xqj/include/pic_porcess.h
 opencv2/highgui/highgui.hpp
 -
 cv_bridge/cv_bridge.h
 -
+light_blobs.h
+/home/xqj/catkin_ws/src/xqj/include/light_blobs.h
+constants.h
+/home/xqj/catkin_ws/src/xqj/include/constants.h
 
-/home/xqj/catkin_ws/src/xqj/src/armor_find.cpp
-../include/armor_find.h
-/home/xqj/catkin_ws/src/xqj/include/armor_find.h
+/home/xqj/catkin_ws/src/xqj/include/show_pic.h
+light_blobs.h
+/home/xqj/catkin_ws/src/xqj/include/light_blobs.h
+constants.h
+/home/xqj/catkin_ws/src/xqj/include/constants.h
+
+/home/xqj/catkin_ws/src/xqj/src/armor_finder.cpp
+armor_finder.h
+/home/xqj/catkin_ws/src/xqj/src/armor_finder.h
+
+/home/xqj/catkin_ws/src/xqj/src/find_armor_box.cpp
+find_armor_box.h
+/home/xqj/catkin_ws/src/xqj/src/find_armor_box.h
+
+/home/xqj/catkin_ws/src/xqj/src/find_light_blobs.cpp
+find_light_blobs.h
+/home/xqj/catkin_ws/src/xqj/src/find_light_blobs.h
 
 /home/xqj/catkin_ws/src/xqj/src/main.cpp
 ros/ros.h
@@ -35,12 +81,18 @@ opencv2/highgui/highgui.hpp
 -
 cv_bridge/cv_bridge.h
 -
-armor_find.h
-/home/xqj/catkin_ws/src/xqj/src/armor_find.h
+find_light_blobs.h
+/home/xqj/catkin_ws/src/xqj/src/find_light_blobs.h
+light_blobs.h
+/home/xqj/catkin_ws/src/xqj/src/light_blobs.h
 
 /home/xqj/catkin_ws/src/xqj/src/pic_porcess.cpp
 ../include/pic_porcess.h
 /home/xqj/catkin_ws/src/xqj/include/pic_porcess.h
+
+/home/xqj/catkin_ws/src/xqj/src/show_pic.cpp
+show_pic.h
+/home/xqj/catkin_ws/src/xqj/src/show_pic.h
 
 /opt/ros/kinetic/include/cv_bridge/cv_bridge.h
 sensor_msgs/Image.h

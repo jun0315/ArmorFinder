@@ -4,9 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xqj/catkin_ws/src/xqj/src/armor_find.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o"
+  "/home/xqj/catkin_ws/src/xqj/src/armor_finder.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o"
+  "/home/xqj/catkin_ws/src/xqj/src/find_armor_box.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o"
+  "/home/xqj/catkin_ws/src/xqj/src/find_light_blobs.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o"
   "/home/xqj/catkin_ws/src/xqj/src/main.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/main.cpp.o"
   "/home/xqj/catkin_ws/src/xqj/src/pic_porcess.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.o"
+  "/home/xqj/catkin_ws/src/xqj/src/show_pic.cpp" "/home/xqj/catkin_ws/build/xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

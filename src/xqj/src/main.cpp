@@ -5,21 +5,23 @@
 #include <cv_bridge/cv_bridge.h>
 #include "find_light_blobs.h"
 #include "light_blobs.h"
+
 using namespace std;
 using namespace cv;
 
 int main() {
     VideoCapture videoCapture(0);
-    videoCapture.set(CV_CAP_PROP_FRAME_WIDTH, 640 );
-    videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, 480 );
+    videoCapture.set(CV_CAP_PROP_FRAME_WIDTH, SRC_WIDTH);
+    videoCapture.set(CV_CAP_PROP_FRAME_HEIGHT, SRC_HEIGHT);
     ArmorFinder armorFinder;
     Mat src;
-    LightBlobs lightBlobs;
+
     while (1) {
+        LightBlobs lightBlobs;
         videoCapture >> src;
         imshow("test", src);
-        armorFinder.findLightBlobs(src,lightBlobs);
-        armorFinder.matchArmorBoxes(src,lightBlobs);
-        waitKey(20);
+        armorFinder.findLightBlobs(src, lightBlobs);
+        armorFinder.matchArmorBoxes(src, lightBlobs);
+        waitKey(100);
     }
 }

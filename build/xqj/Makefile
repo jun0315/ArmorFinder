@@ -555,32 +555,86 @@ sensor_msgs_generate_messages_lisp/fast:
 	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make xqj/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
-src/armor_find.o: src/armor_find.cpp.o
+src/armor_finder.o: src/armor_finder.cpp.o
 
-.PHONY : src/armor_find.o
+.PHONY : src/armor_finder.o
 
 # target to build an object file
-src/armor_find.cpp.o:
-	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.o
-.PHONY : src/armor_find.cpp.o
+src/armor_finder.cpp.o:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.o
+.PHONY : src/armor_finder.cpp.o
 
-src/armor_find.i: src/armor_find.cpp.i
+src/armor_finder.i: src/armor_finder.cpp.i
 
-.PHONY : src/armor_find.i
+.PHONY : src/armor_finder.i
 
 # target to preprocess a source file
-src/armor_find.cpp.i:
-	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.i
-.PHONY : src/armor_find.cpp.i
+src/armor_finder.cpp.i:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.i
+.PHONY : src/armor_finder.cpp.i
 
-src/armor_find.s: src/armor_find.cpp.s
+src/armor_finder.s: src/armor_finder.cpp.s
 
-.PHONY : src/armor_find.s
+.PHONY : src/armor_finder.s
 
 # target to generate assembly for a file
-src/armor_find.cpp.s:
-	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_find.cpp.s
-.PHONY : src/armor_find.cpp.s
+src/armor_finder.cpp.s:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/armor_finder.cpp.s
+.PHONY : src/armor_finder.cpp.s
+
+src/find_armor_box.o: src/find_armor_box.cpp.o
+
+.PHONY : src/find_armor_box.o
+
+# target to build an object file
+src/find_armor_box.cpp.o:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.o
+.PHONY : src/find_armor_box.cpp.o
+
+src/find_armor_box.i: src/find_armor_box.cpp.i
+
+.PHONY : src/find_armor_box.i
+
+# target to preprocess a source file
+src/find_armor_box.cpp.i:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.i
+.PHONY : src/find_armor_box.cpp.i
+
+src/find_armor_box.s: src/find_armor_box.cpp.s
+
+.PHONY : src/find_armor_box.s
+
+# target to generate assembly for a file
+src/find_armor_box.cpp.s:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_armor_box.cpp.s
+.PHONY : src/find_armor_box.cpp.s
+
+src/find_light_blobs.o: src/find_light_blobs.cpp.o
+
+.PHONY : src/find_light_blobs.o
+
+# target to build an object file
+src/find_light_blobs.cpp.o:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.o
+.PHONY : src/find_light_blobs.cpp.o
+
+src/find_light_blobs.i: src/find_light_blobs.cpp.i
+
+.PHONY : src/find_light_blobs.i
+
+# target to preprocess a source file
+src/find_light_blobs.cpp.i:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.i
+.PHONY : src/find_light_blobs.cpp.i
+
+src/find_light_blobs.s: src/find_light_blobs.cpp.s
+
+.PHONY : src/find_light_blobs.s
+
+# target to generate assembly for a file
+src/find_light_blobs.cpp.s:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/find_light_blobs.cpp.s
+.PHONY : src/find_light_blobs.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -636,6 +690,33 @@ src/pic_porcess.cpp.s:
 	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/pic_porcess.cpp.s
 .PHONY : src/pic_porcess.cpp.s
 
+src/show_pic.o: src/show_pic.cpp.o
+
+.PHONY : src/show_pic.o
+
+# target to build an object file
+src/show_pic.cpp.o:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.o
+.PHONY : src/show_pic.cpp.o
+
+src/show_pic.i: src/show_pic.cpp.i
+
+.PHONY : src/show_pic.i
+
+# target to preprocess a source file
+src/show_pic.cpp.i:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.i
+.PHONY : src/show_pic.cpp.i
+
+src/show_pic.s: src/show_pic.cpp.s
+
+.PHONY : src/show_pic.s
+
+# target to generate assembly for a file
+src/show_pic.cpp.s:
+	cd /home/xqj/catkin_ws/build && $(MAKE) -f xqj/CMakeFiles/vision_node.dir/build.make xqj/CMakeFiles/vision_node.dir/src/show_pic.cpp.s
+.PHONY : src/show_pic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -675,15 +756,24 @@ help:
 	@echo "... list_install_components"
 	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_lisp"
-	@echo "... src/armor_find.o"
-	@echo "... src/armor_find.i"
-	@echo "... src/armor_find.s"
+	@echo "... src/armor_finder.o"
+	@echo "... src/armor_finder.i"
+	@echo "... src/armor_finder.s"
+	@echo "... src/find_armor_box.o"
+	@echo "... src/find_armor_box.i"
+	@echo "... src/find_armor_box.s"
+	@echo "... src/find_light_blobs.o"
+	@echo "... src/find_light_blobs.i"
+	@echo "... src/find_light_blobs.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/pic_porcess.o"
 	@echo "... src/pic_porcess.i"
 	@echo "... src/pic_porcess.s"
+	@echo "... src/show_pic.o"
+	@echo "... src/show_pic.i"
+	@echo "... src/show_pic.s"
 .PHONY : help
 
 

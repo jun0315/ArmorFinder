@@ -18,7 +18,7 @@ bool lengthRatioJudge(const LightBlob &lightBlob_i, const LightBlob &lightBlob_j
 }
 
 bool ArmorFinder::matchArmorBoxes(Mat &src, LightBlobs &lightBlobs) {
-    Mat result_pic_blank( 480, 640, CV_8UC1, Scalar(0));
+    Mat result_pic_blank(480, 640, CV_8UC1, Scalar(0));
     for (int i = 0; i < lightBlobs.size(); i++) {
         for (int j = i + 1; j < lightBlobs.size(); j++) {
             if (!isCoupleLight(lightBlobs.at(i), lightBlobs.at(j), enemy_color)) {
@@ -34,8 +34,18 @@ bool ArmorFinder::matchArmorBoxes(Mat &src, LightBlobs &lightBlobs) {
             if (min_x < 0 || max_x > src.cols || min_y < 0 || max_y > src.rows) {
                 continue;
             }
-            rectangle(result_pic_blank,Point(min_x,min_y),Point(max_x,max_y),Scalar(255));
+            Point pt[4];
+            //顺时针
+            pt[0] = Point(min_x, min_y);
+            pt[1] = Point(max_x, min_y);
+            pt[2] = Point(max_x, max_y);
+            pt[3] = Point(min_x, max_y);
+            printf("minx %lf,miny %lf, maxx %lf,maxy %lf\n",min_x,min_y,max_x,max_y);
+            line(result_pic_blank, pt[0], pt[1], Scalar(255), 1);
+            line(result_pic_blank, pt[1], pt[2], Scalar(255), 1);
+            line(result_pic_blank, pt[2], pt[3], Scalar(255), 1);
+            line(result_pic_blank, pt[3], pt[0], Scalar(255), 1);
         }
     }
-    imshow("blank",result_pic_blank);
+    imshow("blank", result_pic_blank);
 }
